@@ -11,13 +11,12 @@ export default defineConfig({
       remotes: {
         remoteApp: "http://localhost:5001/assets/remoteEntry.js",
       },
-      shared: ["react", "react-dom"],
+      shared: ["react", "react-dom", 'tailwindcss'],
     }),
   ],
   build: {
     modulePreload: false,
     target: "esnext",
     minify: false,
-    cssCodeSplit: false,
   },
 });
