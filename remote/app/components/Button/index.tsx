@@ -9,7 +9,13 @@ interface ButtonProps
 const Button: FC<ButtonProps> = (props: ButtonProps) => {
   return (
     <button
-      className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+      style={{
+        backgroundColor: "red",
+        color: "black",
+        fontWeight: "bold",
+        borderRadius: "0.25rem",
+        padding: "0.5rem 1rem",
+      }}
       {...props}
     >
       This is remote button {props.children}
